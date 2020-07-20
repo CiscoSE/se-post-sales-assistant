@@ -1,6 +1,9 @@
 # se-post-sales-assistant
 
-*Post Sales Assistant is a Webex Teams bot tailor-made for SE's to provide them with a personal assistant for building successful customer relationships after a sale has been made.*
+*Post Sales Assistant is a Webex Teams bot tailor-made for SE's to provide them with a personal assistant focused on the post sales portion of the customer lifecycle journey*
+
+![SE Post Sales Assistant](./psabot_logo.png)
+
 
 
 ## Business/Technical Challenge
@@ -14,12 +17,12 @@ In other words, timely responses from SE's with regards to post sales engagement
 
 ## Proposed Solution
 
-Our solution to this challenge is a personal assistant available to any and all SE's: Post Sales Assistant. 
-Post Sales Assistant is a Webex Teams Bot with integrations into CCW for sale-related information and into the TAC case management backend for information regarding any service requests.
+Our solution to this challenge is a personal assistant available to any and all SE's: Post Sales Assistant (PSA). 
+Post Sales Assistant is a Webex Teams Bot with integrations into Outlook to set reminders for follow ups and into the TAC case management backend for information regarding any service requests.
 
-On the proactive front, the bot will message a SE after a given elapsed time has passed since a deal closed. This will facilitate the process of to reaching out and engaging with a customer in order to ensure that their solutions are in place and that they are realizing the value of choosing Cisco. The bot will also enable SE's to schedule reminders about future touch points as needed.
+On the proactive front, a SE can use PSA to schedule a reminder for themself that will appear in Outlook with information regarding the customer and situation to be followed up on. This facilitates the process of remembering to reach out and engage with a customer regarding whether or not their solutions are in place and if they are realizing the value of choosing Cisco.
 
-On the reactive front, the bot can be used to pull pertinent information regarding a customer SR such as last activity, engineer assigned, and current status as well as enable a SE to receive ongoing notifications while the case remains open. 
+On the reactive front, the bot can be used to pull pertinent information regarding a customer's TAC case such as its status, severity, last modified date, engineer assigned, etc. Furthermore, a SE is able to immediately open the case for detailed reading as well as generate an email template to the escalation team and/or the engineer assigned as needed.
 
 
 ## Cisco Products Technologies/ Services
@@ -27,9 +30,8 @@ On the reactive front, the bot can be used to pull pertinent information regardi
 Our solution will levegerage the following Cisco technologies
 
 * [Webex Teams](http://cisco.com/go/webexteams)
-* [Cisco Commerce Workspace](http://cisco.com/go/ccw)
-* CSone
-* BORG/BDB
+* [Microsoft Outlook](https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-business)
+* Cisco TAC Case Backend
 
 
 ## Team Members
@@ -40,28 +42,27 @@ Our solution will levegerage the following Cisco technologies
 
 ## Solution Components
 
-
-<!-- This does not need to be completed during the initial submission phase  
-
-Provide a brief overview of the components involved with this project. e.g Python /  -->
+Our solution uses the following:
+* [Python 3.8](http://python.org/)
+* [webexteamsbot Python Module](https://github.com/hpreston/webexteamsbot)
+* [Microsoft Graph API](https://developer.microsoft.com/en-us/graph)
+* Cisco TAC Case Backend API
 
 
 ## Usage
 
-<!-- This does not need to be completed during the initial submission phase  
-
-Provide a brief overview of how to use the solution  -->
-
+Being a Webex Teams bot, using SE Post Sales Assistant simply requires a SE to start a 1:1 converstation with PSA and begin using it!
 
 
 ## Installation
 
-How to install or setup the project for use.
+This bot is expected to be hosted internally within Cisco as a tool for SE's. No installation required.
 
 
 ## Documentation
 
-Pointer to reference documentation for this project.
+* [webexteamsbot Python Module](https://github.com/hpreston/webexteamsbot)
+* [Microsoft Graph API - Calendar Event](https://docs.microsoft.com/en-us/graph/api/calendar-post-events?view=graph-rest-1.0&tabs=http)
 
 
 ## License
